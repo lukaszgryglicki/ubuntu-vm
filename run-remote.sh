@@ -4,4 +4,4 @@ qemu-system-x86_64 \
   -drive file=./ubuntu.qcow2,if=virtio,format=qcow2,cache=none,discard=unmap \
   -netdev user,id=net0,hostfwd=tcp::29922-:22 -device virtio-net-pci,netdev=net0 \
   -audiodev pa,id=audio0 -device ich9-intel-hda -device hda-duplex,audiodev=audio0 \
-  -vga qxl -vnc 127.0.0.1:1,password=off
+  -vga qxl -vnc 0.0.0.0:1,password=off
