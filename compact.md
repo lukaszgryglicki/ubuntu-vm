@@ -2,7 +2,7 @@
 2) On host:
 ```
 cp ubuntu.qcow2 ubuntu.qcow2.bak
-qemu-img convert -O qcow2 -c ubuntu.qcow2 ubuntu-compact.qcow2
+qemu-img convert -p -O qcow2 -c ubuntu.qcow2 ubuntu-compact.qcow2
 qemu-img info ubuntu.qcow2
 qemu-img info ubuntu-compact.qcow2
 mv ubuntu-compact.qcow2 ubuntu.qcow2
