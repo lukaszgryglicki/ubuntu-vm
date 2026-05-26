@@ -6,6 +6,6 @@ qemu-img convert -p -O qcow2 -c ubuntu.qcow2 ubuntu-compact.qcow2
 qemu-img info ubuntu.qcow2
 qemu-img info ubuntu-compact.qcow2
 mv ubuntu-compact.qcow2 ubuntu.qcow2
-[if anything goes wrong restrore from backup]
+[if anything goes wrong restore from backup]
 # rm -f ubuntu.qcow2.bak
 ```
