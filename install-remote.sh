@@ -5,11 +5,11 @@ qemu-system-x86_64 \
   -cdrom /data/iso/ubuntu-26.04-desktop-amd64.iso -boot d \
   -netdev user,id=net0,hostfwd=tcp::29922-:22 -device virtio-net-pci,netdev=net0 \
   -audiodev pa,id=audio0 -device ich9-intel-hda -device hda-duplex,audiodev=audio0 \
-  -vga qxl -vnc 127.0.0.1:1,password=off
+  -vga qxl -vnc 0.0.0.0:1,password=off
 
 # -device qxl \
 # -display gtk \
 # -device virtio-gpu-pci \
 # -device virtio-mouse-pci \
-# -vnc 127.0.0.1:1,password=off \
-# -device virtio-gpu-pci -display vnc=127.0.0.1:1,password=off \
+# -vnc 0.0.0.0:1,password=off \
+# -device virtio-gpu-pci -display vnc=0.0.0.0:1,password=off \
